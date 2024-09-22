@@ -1,0 +1,27 @@
+package jogo;
+
+public class Main {
+	public static void main(String[] args) {
+
+		Jogo jogo1 = new Jogo("The Legend of Zelda", 12, 299.99);
+		Jogo jogo2 = new Jogo("Minecraft", 7, 149.99);
+		Jogo jogo3 = new Jogo("Grand Theft Auto V", 18, 199.99);
+
+		System.out.println("Jogos antes de qualquer atualização:");
+		System.out.println(jogo1);
+		System.out.println(jogo2);
+		System.out.println(jogo3);
+
+		jogo1.aplicarDesconto(10);
+		System.out.println("\nApós aplicar 10% de desconto no jogo1:");
+		System.out.println(jogo1);
+
+		jogo2.aumentarPreco(5);
+		System.out.println("\nApós aumentar o preço em 5% do jogo2:");
+		System.out.println(jogo2);
+
+		jogo3.atualizarClassificacao(16);
+		System.out.println("\nApós atualizar a classificação etária do jogo3 para 16:");
+		System.out.println(jogo3);
+	}
+}
